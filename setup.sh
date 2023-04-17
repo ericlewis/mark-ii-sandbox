@@ -28,7 +28,7 @@ cd /usr/local/mycroft/mark-2/dbus-hal/ && \
   ./install.sh
 
 echo "Copying system files..."
-cp -r files/* /
+cp -r ../files/* /
 
 echo "Enabling services..."
 systemctl enable mark2-microphone.service
@@ -40,4 +40,4 @@ apt-get clean
 apt-get autoremove --yes
 rm -rf /var/lib/apt/lists/*
 
-echo "Setup complete."
+echo "Setup complete. Reboot to complete process."
