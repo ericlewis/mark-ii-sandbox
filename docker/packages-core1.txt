@@ -1,5 +1,0 @@
-git
-libespeak-ng1
-libportaudio2
-pipewire
-mpg123

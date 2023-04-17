@@ -1,8 +1,0 @@
-bash-completion
-htop
-less
-nano
-openssh-client
-rsync
-tmux
-vim
