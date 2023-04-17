@@ -22,13 +22,13 @@ cp vocalfusion/etc/mark2-microphone.service \
 echo "Enabling i2c..."
 echo 'i2c-dev' >> /etc/modules
 
+echo "Copying system files..."
+cp -r files/* /
+
 echo "Installing DBus HAL..."
 cp -r dbus-hal /usr/local/mycroft/mark-2/dbus-hal/
 cd /usr/local/mycroft/mark-2/dbus-hal/ && \
   ./install.sh
-
-echo "Copying system files..."
-cp -r ../files/* /
 
 echo "Enabling services..."
 systemctl enable mark2-microphone.service
